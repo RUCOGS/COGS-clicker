@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6jmyh5lf0crp"]
+
+[ext_resource type="Theme" uid="uid://bemyyqk7dl3n8" path="res://Resources/button_theme.theme" id="1_0ysef"]
+[ext_resource type="Script" path="res://Scripts/Buildings.gd" id="1_wmc46"]
+[ext_resource type="Texture2D" uid="uid://cdue6t8xcyrrv" path="res://Resources/Final Cog_Color.png" id="2_fywk5"]
+
+[node name="BuildingsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -640.0
+offset_bottom = 544.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wmc46")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -592.0
+offset_bottom = 496.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CursorButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_0ysef")
+text = "Cursor                                                15
+"
+icon = ExtResource("2_fywk5")
+alignment = 0
+icon_alignment = 2
+expand_icon = true
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -360.0
+offset_top = -96.0
+offset_right = 360.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_0ysef")
+text = "Back
+"
+
+[connection signal="pressed" from="VBoxContainer/CursorButton" to="." method="_on_cursor_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

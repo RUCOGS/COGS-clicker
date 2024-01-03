@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdue6t8xcyrrv"
-path="res://.godot/imported/Final Cog_Color.png-984f84cc0114fefe7dd939f7f838e90b.ctex"
+path="res://.godot/imported/Final Cog_Color.png-7a7f749864e87956f5ca1d77be56f60f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BigCog/Resources/Final Cog_Color.png"
-dest_files=["res://.godot/imported/Final Cog_Color.png-984f84cc0114fefe7dd939f7f838e90b.ctex"]
+source_file="res://Resources/Final Cog_Color.png"
+dest_files=["res://.godot/imported/Final Cog_Color.png-7a7f749864e87956f5ca1d77be56f60f.ctex"]
 
 [params]
 
